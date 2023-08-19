@@ -15,6 +15,7 @@ function Assessment() {
 
   return (
     <>
+    {/* Each Section can be a different component when we hav many pages and sections */}
       <Section heading="Assessments Overview" id="assessments_overview">
         <div style={{ marginTop: "20px" }}>
           <Overview />

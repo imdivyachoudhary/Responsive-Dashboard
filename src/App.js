@@ -6,13 +6,21 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/MainBody/Header";
 
 function App() {
+  // useState is used so that we can render the dashboard according to the page selected from menu
   const [page, setPage] = useState("Assessment");
-  const [mobMenuVisibility, setMobMenuVisibility] = useState(null);
 
-  const toggleMobMenu=()=>{
-    mobMenuVisibility===true ? setMobMenuVisibility(false) : setMobMenuVisibility(true);
-  }
-  
+  // To show and hide menu in mob view
+  const toggleMobMenu = () => {
+    // mobMenuVisibility===true ? setMobMenuVisibility(false) : setMobMenuVisibility(true);
+    let element = document.getElementById("menu");
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  };
+
+  // Return the component respective to the page selected in menu
   function getMainBody() {
     if (page === "Assessment") {
       return <Assessment />;
@@ -20,7 +28,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Menu visibility={mobMenuVisibility} toggleMobMenu={toggleMobMenu} />
+      <Menu toggleMobMenu={toggleMobMenu} />
       <div className="Dashboard">
         <Navbar heading={page} toggleMobMenu={toggleMobMenu} />
         <Header heading={page} />
