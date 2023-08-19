@@ -1,0 +1,57 @@
+.Header{
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid rgb(246, 239, 239);
+    font-weight: bold;
+}
+
+.Heading{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(12, 40, 117);
+}
+
+.SubHeading{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.SubHeading.Active{
+    color: rgb(54, 102, 233);
+    border-bottom: 3px solid rgb(54, 102, 233);
+}
+
+.HeadingPartition{
+    margin: 0 20px;
+    height: 45px;
+    border: 1.8px solid rgb(246, 239, 239);
+}
+
+@media screen and (max-width: 620px) {
+    
+    .Header{
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+        border: none;
+    }
+
+    .Heading{
+        display: none;
+    }
+
+    .SubHeading{
+        padding: 0 20px;
+    }
+
+    /* .Header div{
+        width: 100px;
+    } */
+
+  }

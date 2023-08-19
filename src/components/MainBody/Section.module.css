@@ -1,0 +1,21 @@
+.Section{
+    padding: 20px;
+}
+
+.Heading{
+    font-size: 1.3rem;
+    color: rgb(12, 40, 117);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IconOptions{
+    display: none;
+}
+
+@media screen and (max-width: 620px) {
+    .IconOptions{
+        display: flex;
+    }
+}

@@ -1,0 +1,107 @@
+.Menu {
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.MenuHeading {
+  display: none;
+}
+
+.MenuItem {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  padding: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.MenuItem .ItemName {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MenuItem .Icon {
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 20px;
+}
+
+.MenuItem .Icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.MenuItem.Active {
+  border: 2px solid rgb(54, 102, 233);
+  border-radius: 20px;
+  background-color: rgb(206, 215, 241);
+  color: rgb(54, 102, 233);
+  font-weight: bold;
+}
+
+.Menu .AdminPartition {
+  border-top: 2px dotted gray;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+.Menu .AdminPartition .AdminButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border: 2px solid rgba(255, 0, 0, 0.869);
+  border-radius: 25px;
+  background-color: rgba(246, 184, 184, 0.869);
+  color: rgba(255, 0, 0, 0.869);
+}
+
+@media screen and (max-width: 620px) {
+  .Menu {
+    width: 0;
+    min-height: 100vh;
+    background-color: rgb(245, 247, 252);
+    padding-top: 20px;
+  }
+
+  .MenuHeading {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .MenuHeading .CrossButton {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(241, 7, 7);
+  }
+
+  .MenuItem {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    /* height: 30px; */
+    /* justify-content: space-between; */
+  }
+
+  .MenuItem .ItemName {
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+
+  .MenuItem .Icon {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+.IconImage{
+    /* height: 50px;
+    width: 50px; */
+    /* border-radius: 10px; */
+    /* background-color: rgb(190, 155, 223); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IconImage img{
+    height: 60%;
+    width: 60%;
+}

@@ -1,0 +1,91 @@
+.Overview{
+    width: 100%;
+    border: 2px solid rgb(200, 193, 193);
+    border-radius: 20px;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: rgb(12, 40, 117);
+}
+
+.Row{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(200, 193, 193);
+}
+
+.Col{
+    /* height: 100%; */
+    border-right: 2px solid rgb(200, 193, 193);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Row:nth-last-of-type(1){
+    border-bottom: 0;
+}
+
+.Col:nth-last-of-type(1){
+    border-right: 0;
+}
+
+.Col .Heading{
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Detail{
+    display: flex;
+    align-items: center;
+}
+
+
+.DetailData{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.Count{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.Count span{
+    color: green;
+    font-size: 0.7rem;
+    padding-left: 5px;
+}
+
+.LeftBorder{
+    border-left: 2px solid rgb(200, 193, 193);
+}
+
+.DetailAbout{
+    flex-shrink: 1;
+    font-size: 0.8rem;
+}
+
+.MobView{
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .DesktopView{
+        display: none;
+    }
+
+    .MobView{
+        display: block;
+    }
+
+    .Count{
+        font-size: 1rem;
+    }
+
+}

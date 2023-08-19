@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Menu from "./components/Menu/Menu";
+import { useState } from "react";
+import Assessment from "./pages/Assessment";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/MainBody/Header";
 
 function App() {
+  const [page, setPage] = useState("Assessment");
+  const [mobMenuVisibility, setMobMenuVisibility] = useState(null);
+
+  const toggleMobMenu=()=>{
+    mobMenuVisibility===true ? setMobMenuVisibility(false) : setMobMenuVisibility(true);
+  }
+  
+  function getMainBody() {
+    if (page === "Assessment") {
+      return <Assessment />;
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu visibility={mobMenuVisibility} toggleMobMenu={toggleMobMenu} />
+      <div className="Dashboard">
+        <Navbar heading={page} toggleMobMenu={toggleMobMenu} />
+        <Header heading={page} />
+        {getMainBody()}
+      </div>
     </div>
   );
 }

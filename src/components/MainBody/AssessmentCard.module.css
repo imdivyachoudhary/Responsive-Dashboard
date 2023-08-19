@@ -1,0 +1,271 @@
+.AssessmentCard{
+    /* width: 25%; */
+    width: 33%;
+    height: 270px;
+    /* box-sizing: border-box; */
+    
+}
+
+.AssessmentCardBox{
+    width: 95%;
+    height: 250px;
+    box-sizing: border-box;
+    border: 2px solid rgb(200, 193, 193);
+    border-radius: 20px;
+    color: rgb(12, 40, 117);
+    padding: 20px;
+    position: relative;
+}
+
+.OptionsDotImage{
+    position: absolute;
+    top:15px;
+    right: 10px;
+    height: 30px;
+}
+
+.AddCardBox{
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 239, 239);
+    padding: 30px;
+}
+
+.AddCardBox .Desc{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.AddIcon{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.AddIcon i{
+    font-size: 2rem;
+    color: rgb(54, 102, 233);
+}
+
+.AddIcon.Outer {
+    background-color: rgb(54, 102, 233);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.AddIcon.Outer i{
+    color: white;
+}
+
+/* .CardBody{
+    
+} */
+
+.About{
+    padding: 20px 0;
+}
+
+.AssessmentTopic{
+    /* padding: 10px 0; */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.AssessmentDesc{
+    display: flex;
+    /* padding: 10px 0; */
+}
+
+.AssessmentType{
+    /* font-size: 0.8rem; */
+    font-weight: bold;
+}
+
+.AssessmentDate{
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid rgb(200, 193, 193);
+    font-size: 0.9rem;
+    display: flex;
+}
+
+/* .AssessmentDate i{
+    
+} */
+
+.AssessmentDate .Date{
+    padding-left: 10px;
+}
+
+.CardFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px dashed rgb(200, 193, 193);
+    padding-top: 20px;
+}
+
+.AssessmentDetail{
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.Detail{
+    padding-right: 10px;
+}
+
+/* .DetailValue{
+
+} */
+
+/* .DetailType{
+
+} */
+
+.Options{
+    display: flex;
+    align-items: center;
+}
+
+/* .ShareButton{
+
+} */
+
+.ShareButton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 2px solid rgb(12, 40, 117);
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.ShareButton button i{
+    padding-right: 5px;
+}
+
+.Students{
+    width: 110px;
+    margin-left: 10px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Student{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.StudentCount{
+    position: absolute;
+    right: 0;
+}
+
+.SkillsInput input{
+    border-radius: 0 0 10px 10px;
+}
+
+.SkillsList{
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow: auto;
+}
+
+.Skill{
+    background-color: rgb(206, 215, 241);
+    color: rgb(54, 102, 233);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+.Skill .Cross{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.Skill .Name{
+    min-width: 50px;
+}
+
+
+/* @media screen and (max-width: 1600px) {
+    .AssessmentCard{
+        width: 33%;
+    }
+} */
+
+
+@media screen and (max-width: 1100px) {
+    .AssessmentCard{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .AssessmentCard{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+    .AssessmentCardBox{
+        width: 100%;
+        height: auto;
+    }
+
+    .CardBody{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .About{
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    .Detail{
+        font-size: 0.7rem;
+    }
+
+    .Options{
+        font-size: 0.8rem;
+    }
+
+    .Students{
+        width: 100px;
+    }
+}

@@ -1,0 +1,17 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(12, 40, 117);
+    border-bottom: 2px solid rgb(246, 239, 239);
+}
+
+.Navbar h3{
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 620px) {
+    .Navbar{
+        display: none;
+    }
+}
