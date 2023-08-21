@@ -22,7 +22,7 @@ function Assessment() {
         </div>
       </Section>
       <Section heading="My Assessment" onClickHandle={toggleOverview}>
-        <div style={{ display: "flex", flexWrap: "wrap", marginTop: "20px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", width:"100%", justifyContent:"space-around" ,marginTop: "20px" }}>
           <AddAssessment />
           <AssessmentCard
             topic="Math Assessment"

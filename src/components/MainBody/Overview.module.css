@@ -76,14 +76,17 @@
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
     .Count{
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    .Count span{
+        font-size: 0.2rem;
     }
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .DesktopView{
         display: none;
     }
@@ -94,6 +97,10 @@
 
     .Count{
         font-size: 1rem;
+    }
+
+    .Count span{
+        font-size: 0.7rem;
     }
 
     
