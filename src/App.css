@@ -13,10 +13,6 @@
   border-radius: 10px;
 }
 
-#assessments_overview{
-  display: none;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,5 +42,9 @@ select.form-control{
   .Dashboard{
     margin: 0;
     border-radius: 0;
+  }
+
+  #assessments_overview{
+    display: none;
   }
 }
